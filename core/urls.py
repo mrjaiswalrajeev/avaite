@@ -31,8 +31,5 @@ urlpatterns = [
     path('api/', include(router.urls)),
     
     # API documentation endpoint (Bonus - highly recommended)
-    path('api/docs/', include('rest_framework.urls', namespace='rest_framework')),
-    
-    # Health check endpoint (Bonus - good practice)
-    path('health/', lambda request: HttpResponse(status=200)),
+    path('api/docs/', include('rest_framework.urls', namespace='rest_framework'))
 ]
